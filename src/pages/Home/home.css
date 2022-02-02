@@ -64,6 +64,7 @@
   color: #fff;
   outline: none;
   font-size: 18px;
+  padding-right: 14px;
 }
 
 .area-input input::placeholder {
