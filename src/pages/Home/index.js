@@ -6,6 +6,7 @@ import Menu from '../../components/Menu';
 import LinkItem from '../../components/LinkItem';
 
 import api from '../../services/api';
+import { saveLink } from '../../services/storeList'
 
 export default function Home() {
   const [ link, setLink ] = useState('');
@@ -17,9 +18,9 @@ export default function Home() {
       const response = await api.post('/shorten', {
         long_url: link
       });
-
       setData(response.data);
       setShowModal(true);
+      saveLink('@encurtaLink', response.data);
       setLink('');
     } catch {
       alert('Ops... Algo deu errado! Verifique o link digitado e tente novamente.')
@@ -54,7 +55,7 @@ export default function Home() {
           closeModal={() => setShowModal(false)}
           content={data}
         />
-      ) }
+      )}
     </div>
   )
 }

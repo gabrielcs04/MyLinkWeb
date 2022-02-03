@@ -56,6 +56,18 @@
   background-color: transparent;
 }
 
+.empty-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-top: 28px;
+  background-color: rgba(255, 255, 255, .15);
+  height: 46px;
+  color: #fff;
+}
+
 @media (max-width: 715px) {
   .links-container {
     width: 90%;
