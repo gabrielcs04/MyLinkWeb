@@ -33,8 +33,7 @@
   border: 0;
   width: 100%;
   min-width: 80%;
-  display: flex;
-  align-items: center;
+  text-align: left;
   border-radius: 4px;
   height: 46px;
   background-color: rgba(255, 255, 255, .15);
@@ -49,6 +48,10 @@
 
 .link svg {
   margin-right: 14px;
+}
+
+.link:first-child {
+  line-height: 100%;
 }
 
 .link-delete {
