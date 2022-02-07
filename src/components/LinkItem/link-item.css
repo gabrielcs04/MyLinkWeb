@@ -1,6 +1,4 @@
 .modal-container {
-  /* position: absolute;
-  bottom: 18px; */
   margin-top: 20px;
   background-color: #fff;
   padding: 14px;
@@ -34,6 +32,7 @@
 .modal-container span {
   margin: 14px 0;
   color: #a7a7a7;
+  word-break: break-word;
 }
 
 .modal-link {
